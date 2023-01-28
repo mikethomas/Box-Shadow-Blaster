@@ -12,8 +12,8 @@ const hero = {
 }
 
 document.addEventListener('keydown', (e) => {
-  if (e.key == 'ArrowLeft') hero.position.x -= 10;
-  if (e.key == 'ArrowRight') hero.position.x += 10;
+  if (e.key == 'ArrowLeft' && hero.position.x > 0) hero.position.x -= 10;
+  if (e.key == 'ArrowRight' && hero.position.x < 1230) hero.position.x += 10;
   moveHero();
 });
 
