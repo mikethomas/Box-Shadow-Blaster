@@ -3,3 +3,8 @@ canvas {
   margin: auto;
   display: block;
 }
+.start-game {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
